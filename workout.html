@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Workout Tracker</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images/beetle-favicon.png" type="image/png">
+</head>
+<body>
+    <ul id="headerNav">
+        <li id="logo-header"><a href="index.html"><img src="images/beetle-cartoon-standing.png"></a></li>
+    </ul>
+    <div class="container">
+        <h1>Interactive Workout Tracker</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Sets</th>
+                    <th>Reps</th>
+                    <th>Weight (kg)</th>
+                </tr>
+            </thead>
+            <tbody id="workout-table-body">
+                <!-- Workout entries will be added here dynamically -->
+            </tbody>
+        </table>
+        <div id = "exercise-select">
+            <p><strong>Exercise name:</strong></p>
+            <input type="text" id = "exercise-name" placeholder="Type exercise name here">
+            <button class = "button" id="add-exercise-btn">Add set</button>
+            <button class="button" id="delete-last-set-btn">Delete Last Set</button>
+            <button class = "button" id="submit-workout-btn">Submit workout</button>
+        </div>
+    </div> 
+    <script src="workoutScript.js"></script>
+</body>
+</html>
